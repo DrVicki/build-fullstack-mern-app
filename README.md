@@ -6,7 +6,7 @@ This guided learning activity will provide you with a high-level overview of wha
 
 While covering concepts, we will create a simple mini-project. We will create a simple productivity tracker application where you can record activities you accomplished during the day and for how much time. We will see how we are spending our time, while also seeing all of the information on the home page.
 
-IMAGE HERE
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/GSvRlQ0.gif)
 
 **What the app will do**
 
@@ -15,7 +15,7 @@ IMAGE HERE
   - That information will be stored in the MongoDB database.
   - All activities are displayed on the homepage.
   
-  IMAGE2
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/image2.png)
   
 ## Frontend/Client
 
@@ -77,7 +77,7 @@ Run the following command in the terminal and navigate to http://localhost:3000.
 ```
 npm start
 ```
-IMAGE3
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/image3.png)
 
 **Design the app.**
 
@@ -116,7 +116,7 @@ Copy and paste this HTML code into the ```App``` component.
 </div>
 ```
 Our app will now look like this.
-IMAGE4
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IAGE4.png)
 
 Now add some CSS. Copy and paste the CSS code from this file into the ```App.css``` file.
 
@@ -191,7 +191,7 @@ body {
 
 Our app now appears as follows.
 
-IMAGE5
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/image5.png)
 
 **Add logic.**
 
@@ -238,10 +238,10 @@ Let's create a database first before we create a ```server```.
 Log in to your [MongoDB](https://www.mongodb.com/) account.
   - Create a project.
   
-IMAGE6
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/image6.png)
 
 Now go to "Browse collections" and create a database. For the collection name, write "**activities**".
-IMAGE7
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IMAGE7.png)
 
 Click on "**Overview**" and then in the overview tab click on "**CONNECT" -> "Connect your application**". 
   - Copy the connection string. 
@@ -322,7 +322,7 @@ Run the below command and go to http://localhost:5000 in your browser.  (**Make 
 npm run dev
 ```
 You should see something like this.
-IMAGE8
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IMAGE8.png)
 
 This means the ```server``` is running successfully.
 
@@ -527,7 +527,7 @@ window.location.reload(); // reloads the window after sending request
 Enter an activity name and time, then submit. (Ensure the ```server``` is also up and running.)
 
 An error message will appear in the browser console.
-IMAGE9
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IMAGE9.png)
 
 Access to the ```server``` is banned by **CORS** (Cross-Origin Resource Sharing) policy, which means your ```server``` does not allow access to its resources. We may avoid this problem by using the ***cors*** ```npm``` package.
 
@@ -552,7 +552,7 @@ Restart the ```server```.
   - Try to add an activity. It will work this time.
 
   - You can see the data  added to the database.
-IMAGE10
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IMAGE10.png)
 
 Now we must display the list of newly added activities.
   - We display activities as soon as the component renders. We can accomplish this by using ```useEffect()``` hook. Fetch the data from the ```server``` and save it to the ```state```.
@@ -571,7 +571,7 @@ Now we must display the list of newly added activities.
   ```
 Now you can see all the activities on the homepage.
 
-IMAGE11
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IMAGE11.png)
 
 ## Hosting full-stack application
 
@@ -605,7 +605,7 @@ Netlify will host our client/frontend part.
   - Sign in to [Netlify](https://www.netlify.com/).
   - Select "Add Site."
   - Select "GitHub."
-IMAGE12
+![](https://github.com/DrVicki/build-fullstack-mern-app/blob/main/images/IMAGE12.png)
 
   - Give GitHub permission.
   - Select your repository.
